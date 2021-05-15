@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/Ishaan-11/basic-chat-app#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "socket.io": "^4.1.1"
   }
 }

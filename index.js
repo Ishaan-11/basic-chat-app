@@ -12,14 +12,14 @@ app.get('/', (req, res) => {
 });
 
 io.on('connection', socket => {
-  console.log('a user connected');
+  socket.broadcast.emit('user joined','a user joined');
 
   socket.on('chat message', msg => {
     io.emit('chat message', msg);
   })
 
   socket.on('disconnect', () => {
-    console.log('user disconnected');
+    socket.broadcast.emit('user left','a user left');
   });
 });
 

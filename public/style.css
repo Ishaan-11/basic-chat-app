@@ -48,6 +48,9 @@ body {
   padding: 0.5rem 1rem; 
 }
 
-#messages > li:nth-child(odd) { 
-  background: #efefef; 
+.log {
+  color: gray;
+  font-size: 70%;
+  margin: 5px;
+  text-align: center;
 }

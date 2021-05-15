@@ -2,10 +2,11 @@ const express = require('express');
 const http = require('http');
 
 const app = express();
+app.use(express.static("public"));
 const server = http.createServer(app);
 
 app.get('/', (req, res) => {
-  res.send('<h1>Basic Chat App</h1>');
+  res.sendFile(__dirname + '/index.html')
 });
 
 server.listen(3000, () => {

@@ -38,6 +38,10 @@ body {
   color: #fff; 
 }
 
+#form > button:active {
+  transform: scale(0.98);
+}
+
 #messages { 
   list-style-type: none; 
   margin: 0; 
